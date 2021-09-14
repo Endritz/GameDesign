@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
+        <event-group description="" sid="537857939930872" title="Player Interactions">
+            <sub-events>
+                <event-block sid="303776324154147">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="422249046486193" type="Player">
+                            <param id="0" name="Object">Key</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="529591872978703" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="725067036748161" type="Key" />
+                        <action id="-10" name="Add to" sid="632739729944632" type="System">
+                            <param id="0" name="Variable">Keys</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
