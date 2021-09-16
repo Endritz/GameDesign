@@ -98,8 +98,71 @@
         </object-type>
         <object-type name="Key" sid="316197136318855">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="176259950629651">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112401914680513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="940702270157896">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="851127223516996">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733451186935907" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door2" sid="190211306931996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126465997536504" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door3" sid="219177953074719">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799394234741601" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door4" sid="308770429657653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594379162479944" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door5" sid="657534907720974">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363634507592801" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall2" sid="919290643782106">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="209065948866650">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763754231942240" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -108,6 +171,11 @@
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+        <layout>Layout 3.xml</layout>
+        <layout>Layout 4.xml</layout>
+        <layout>Layout 5.xml</layout>
+        <layout>Layout 6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>

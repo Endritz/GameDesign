@@ -25,5 +25,32 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="639649187273854">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="134515300768334" type="System">
+                    <param id="0" name="Variable">Keys</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="216023786165031" type="Wall2" />
+            </actions>
+        </event-block>
+        <event-block sid="821883686116720">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
+                    <param id="0" name="Object">Door</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="960721538073721" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="395451693643409" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
