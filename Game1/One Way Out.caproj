@@ -199,7 +199,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730181740009327" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Ball\ball.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\ball.png">
                         <collision-poly>
                             <point x="0.175" y="0.175" />
                             <point x="0.5" y="0.05" />
@@ -246,7 +246,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100514590428728" speed="5">
-                    <frame duration="1" hotspotX="-0.65" hotspotY="-3.825" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\tree1.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\tree2.png">
                         <collision-poly>
                             <point x="0.35" y="0.35" />
                             <point x="0.5" y="0.15" />
@@ -270,7 +270,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808448146057191" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\tree2.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\images before cropping\umbrella.png">
                         <collision-poly>
                             <point x="0.107143" y="0.075" />
                             <point x="0.5" y="0" />
@@ -318,7 +318,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956773596763207" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\umbrella.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\crab.png">
                         <collision-poly>
                             <point x="0.225" y="0.225" />
                             <point x="0.5" y="0.1" />
