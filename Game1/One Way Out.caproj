@@ -14,7 +14,6 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -105,106 +104,13 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< Updated upstream
-=======
-        <object-type name="Door" sid="940702270157896">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="851127223516996">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733451186935907" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Door2" sid="190211306931996">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126465997536504" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Door3" sid="219177953074719">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799394234741601" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Door4" sid="308770429657653">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594379162479944" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Door5" sid="657534907720974">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363634507592801" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Wall2" sid="919290643782106">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="209065948866650">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763754231942240" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="914413954358889">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\kylep\Desktop\GameDesign\kyle_room\Sand.jpg" />
-        </object-type>
-        <object-type name="Sprite" sid="850550835910963">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565871234125744" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500998" original-source="C:\Users\kylep\Desktop\GameDesign\kyle_room\shovel.png">
-                        <collision-poly>
-                            <point x="0.474609" y="0.48503" />
-                            <point x="0.5" y="0.443114" />
-                            <point x="0.556641" y="0.453094" />
-                            <point x="0.525391" y="0.499002" />
-                            <point x="0.5" y="0.540918" />
-                            <point x="0.167969" y="0.828343" />
-                            <point x="0.464844" y="0.499002" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
->>>>>>> Stashed changes
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
-<<<<<<< Updated upstream
-=======
-        <layout>Layout 2.xml</layout>
-        <layout>Kyle&apos;s Room.xml</layout>
-        <layout>Layout 4.xml</layout>
-        <layout>Layout 5.xml</layout>
-        <layout>Layout 6.xml</layout>
->>>>>>> Stashed changes
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Kyle&apos;s Room.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />
@@ -223,28 +129,7 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder>
-        <file name="Concrete 1.m4a" />
-        <file name="Concrete 1.ogg" />
-        <file name="Concrete 2.m4a" />
-        <file name="Concrete 2.ogg" />
-        <file name="Forest 1.m4a" />
-        <file name="Forest 1.ogg" />
-        <file name="Forest 2.m4a" />
-        <file name="Forest 2.ogg" />
-        <file name="Grass 1.m4a" />
-        <file name="Grass 1.ogg" />
-        <file name="Grass Running.m4a" />
-        <file name="Grass Running.ogg" />
-        <file name="Gravel - Run.m4a" />
-        <file name="Gravel - Run.ogg" />
-        <file name="Gravel 1.m4a" />
-        <file name="Gravel 1.ogg" />
-        <file name="Sand.m4a" />
-        <file name="Sand.ogg" />
-        <file name="Snow.m4a" />
-        <file name="Snow.ogg" />
-    </sounds-folder>
+    <sounds-folder />
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
