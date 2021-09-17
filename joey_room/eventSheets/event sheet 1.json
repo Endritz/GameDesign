@@ -1,0 +1,368 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 761957496345279
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 890865665265147
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Sprite3",
+					"sid": 271801097872464,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 786338915089987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite4",
+					"sid": 954692963570965,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Sprite5",
+					"sid": 196383765872124,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite4",
+					"sid": 524198673828540,
+					"parameters": {
+						"object": "Sprite2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite4",
+					"sid": 989745265496997
+				}
+			],
+			"sid": 256576625040949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 798641019692348
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Sprite5",
+					"sid": 711134727353377,
+					"parameters": {
+						"angle": "random(360)"
+					}
+				}
+			],
+			"sid": 452293486311978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Sprite5",
+					"sid": 629602193243315
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Sprite5",
+					"sid": 525666895243037,
+					"parameters": {
+						"x": "Sprite3.X",
+						"y": "Sprite3.Y"
+					}
+				}
+			],
+			"sid": 961517134409375
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite5",
+					"sid": 511928166854555,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite5",
+					"sid": 518484985775055,
+					"parameters": {
+						"object": "Sprite2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite5",
+					"sid": 892706987089779
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 947580233505132,
+					"parameters": {
+						"variable": "Score",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 747385532162325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 430930806486510,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 961807041117342,
+					"parameters": {
+						"object-to-create": "Sprite5",
+						"layer": "0",
+						"x": "LayoutWidth + 100",
+						"y": "random(LayoutHeight)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 661954894687310
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite5",
+					"sid": 342942740422794,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite3",
+					"sid": 879886575581750
+				}
+			],
+			"sid": 599845488388085
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 682525985993544
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Background",
+					"sid": 807233633845474,
+					"parameters": {
+						"audio-file": "heartbeat_monitor",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 896367722794882
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 794771003909274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite6",
+					"sid": 950706901768231,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Sprite6",
+					"sid": 821830118502222,
+					"parameters": {
+						"instance-variable": "Win",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Background",
+					"sid": 156485280160658,
+					"parameters": {
+						"audio-file": "coin",
+						"loop": "not-looping",
+						"volume": "10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 171186672752306,
+					"parameters": {
+						"text": "\"Score: \" & Score"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 161442171086283,
+					"parameters": {
+						"variable": "Score",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 392668777637829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Sprite3",
+					"sid": 540200313113042
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 237388049150944
+				}
+			],
+			"sid": 557455698705982
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 600165245420605,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Sprite4",
+					"sid": 858437691745115,
+					"parameters": {
+						"object": "Sprite3",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 136464101899890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 103923162908537,
+					"parameters": {
+						"variable": "Score",
+						"comparison": 5,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Sprite6",
+					"sid": 311916042676948,
+					"parameters": {
+						"instance-variable": "Win",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 844753148257104
+		}
+	],
+	"sid": 203437094204643
+}
