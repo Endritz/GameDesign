@@ -6,6 +6,21 @@
         <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
         <event-group description="" sid="537857939930872" title="Player Interactions">
             <sub-events>
+                <event-block sid="821883686116720">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
+                            <param id="0" name="Object">DoorEndrit</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="960721538073721" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="395451693643409" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="303776324154147">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="422249046486193" type="Player">
@@ -34,23 +49,31 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="216023786165031" type="Wall2" />
+                <action id="-9" name="Destroy" sid="216023786165031" type="Lock" />
             </actions>
         </event-block>
-        <event-block sid="821883686116720">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
-                    <param id="0" name="Object">Door</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="960721538073721" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="395451693643409" type="System">
-                    <param id="0" name="Layout">Layout 2</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds">
+            <sub-events>
+                <event-block sid="765009255812721">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="439146353364272" type="Player">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="151902323050450" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="648747641697597" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="840005159901867" type="Audio">
+                            <param id="0" name="Audio file">Sand</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

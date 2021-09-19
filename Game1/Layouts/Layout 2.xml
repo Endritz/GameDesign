@@ -3293,7 +3293,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Door" uid="251">
+                <instance type="DoorEndrit" uid="251">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
