@@ -10,7 +10,6 @@
     <unique-id>qexzn2as35b9</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -19,6 +18,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -26,8 +26,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1280</width>
-        <height>720</height>
+        <width>560</width>
+        <height>560</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -66,8 +66,25 @@
                 <behavior-type name="Solid" sid="403557042805595">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="ScrollTo" sid="625633667032533">
+                    <behavior id="scrollto" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
+                <animation-folder name="Walking">
+                    <animation framecount="1" loop="0" name="Player" pingpong="0" repeatcount="1" repeatto="0" sid="376733652092480" speed="5">
+                        <frame duration="1" hotspotX="0.125" hotspotY="0.5" original-source="C:\Users\formu\Pictures\playerSprite\TopDownCharacter\Character\Character_Right.png">
+                            <collision-poly>
+                                <point x="0.09375" y="0.375" />
+                                <point x="0.914063" y="0.34375" />
+                                <point x="0.929688" y="0.5" />
+                                <point x="0.914063" y="0.65625" />
+                                <point x="0.101563" y="0.59375" />
+                                <point x="0.0859375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921543493292449" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -90,12 +107,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977565050103918" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.00166667" hotspotY="0.99375" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type global="1" name="Array" sid="240973457572510">
-            <plugin id="Arr" />
         </object-type>
         <object-type name="Key" sid="316197136318855">
             <plugin id="Sprite" />
@@ -341,19 +355,42 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ScareTrigger" sid="739864223513767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584685318969678" speed="5">
+                    <frame duration="1" hotspotX="-0.004" hotspotY="1.004" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGAlex" sid="235374076247518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645338055907095" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.00234467" original-source="C:\Users\formu\Pictures\IHATEYOUJOHNNY.JPG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chest" sid="807423395023541">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638206222690839" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
-        <layout>Layout 2.xml</layout>
-        <layout>Layout 3.xml</layout>
+        <layout>LayoutMain.xml</layout>
+        <layout>LayoutAlex.xml</layout>
+        <layout>LayoutKyle.xml</layout>
         <layout>Layout 4.xml</layout>
         <layout>Layout 5.xml</layout>
         <layout>Layout 6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />

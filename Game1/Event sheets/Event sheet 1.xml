@@ -11,13 +11,58 @@
                         <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
                             <param id="0" name="Object">DoorEndrit</param>
                         </condition>
-                        <condition id="2" name="Key is down" sid="960721538073721" type="Keyboard">
-                            <param id="0" name="Key">32</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="395451693643409" type="System">
-                            <param id="0" name="Layout">Layout 2</param>
+                            <param id="0" name="Layout">LayoutAlex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879387011619779">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="792015795299115" type="Player">
+                            <param id="0" name="Object">DoorAlex</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="336805997832521" type="System">
+                            <param id="0" name="Layout">Layout 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571259451665201">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="356662828895077" type="Player">
+                            <param id="0" name="Object">DoorKyle</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="659522505062654" type="System">
+                            <param id="0" name="Layout">LayoutKyle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="461042785883518">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="691070518529901" type="Player">
+                            <param id="0" name="Object">DoorJoey</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="147521996228396" type="System">
+                            <param id="0" name="Layout">Layout 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="934954866490939">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="736697978294851" type="Player">
+                            <param id="0" name="Object">DoorFinal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="528007301209660" type="System">
+                            <param id="0" name="Layout">Layout 6</param>
                         </action>
                     </actions>
                 </event-block>
@@ -38,6 +83,14 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="518820997262839">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="935065158486502" type="Player">
+                            <param id="0" name="Object">ScareTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
         </event-group>
         <event-block sid="639649187273854">
@@ -52,28 +105,6 @@
                 <action id="-9" name="Destroy" sid="216023786165031" type="Lock" />
             </actions>
         </event-block>
-        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds">
-            <sub-events>
-                <event-block sid="765009255812721">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="439146353364272" type="Player">
-                            <param id="0" name="Object">TiledBackground</param>
-                        </condition>
-                        <condition behavior="8Direction" id="0" name="Is moving" sid="151902323050450" type="Player" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="648747641697597" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="0" name="Play" sid="840005159901867" type="Audio">
-                            <param id="0" name="Audio file">Sand</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds" />
     </events>
 </c2eventsheet>
