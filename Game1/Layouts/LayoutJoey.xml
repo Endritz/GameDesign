@@ -9031,6 +9031,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ScareTrigger" uid="695">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1280</x>
+                        <y>1000</y>
+                        <z>0</z>
+                        <width>84</width>
+                        <height>85</height>
+                        <depth>0</depth>
+                        <hotspotX>-0.004</hotspotX>
+                        <hotspotY>1.003999949</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -9095,7 +9117,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="844">
+                <instance type="DoorJoey" uid="844">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9117,7 +9139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="845">
+                <instance type="DoorJoey" uid="845">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9139,7 +9161,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="846">
+                <instance type="DoorJoey" uid="846">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9161,7 +9183,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="847">
+                <instance type="DoorJoey" uid="847">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9183,7 +9205,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="848">
+                <instance type="DoorJoey" uid="848">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9205,7 +9227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorAlex" uid="849">
+                <instance type="DoorJoey" uid="849">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9223,6 +9245,47 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Layer 0" sid="717541297595567">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Jumpscare" uid="696">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>800</x>
+                        <y>520</y>
+                        <z>0</z>
+                        <width>1800</width>
+                        <height>1040</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

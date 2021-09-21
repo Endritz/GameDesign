@@ -10,7 +10,7 @@
                 <condition id="-14" name="Compare variable" sid="134515300768334" type="System">
                     <param id="0" name="Variable">Keys</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
+                    <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
@@ -22,7 +22,7 @@
                 <event-block sid="821883686116720">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
-                            <param id="0" name="Object">DoorEndrit</param>
+                            <param id="0" name="Object">DoorAlex</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -34,7 +34,7 @@
                 <event-block sid="879387011619779">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="792015795299115" type="Player">
-                            <param id="0" name="Object">DoorAlex</param>
+                            <param id="0" name="Object">DoorJoey</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -49,12 +49,16 @@
                             <param id="0" name="Object">DoorKyle</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="154075651260292" type="System">
+                            <param id="0" name="Layout">LayerKyle</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="461042785883518">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="691070518529901" type="Player">
-                            <param id="0" name="Object">DoorJoey</param>
+                            <param id="0" name="Object">where</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -111,6 +115,8 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="457772003899405" type="Player" />
+                        <action id="-9" name="Destroy" sid="232113577282229" type="ScareTrigger" />
                         <action id="0" name="Play" sid="362902104754333" type="Audio">
                             <param id="0" name="Audio file">scream</param>
                             <param id="2" name="Loop">0</param>
@@ -120,7 +126,6 @@
                         <action id="-16" name="Wait" sid="781400493025249" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action behavior="8Direction" id="0" name="Stop" sid="457772003899405" type="Player" />
                         <action id="-15" name="Set visible" sid="919211464218645" type="Jumpscare">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -142,7 +147,6 @@
                         <action id="-15" name="Set visible" sid="591473812743444" type="Jumpscare">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="232113577282229" type="ScareTrigger" />
                     </actions>
                 </event-block>
             </sub-events>
