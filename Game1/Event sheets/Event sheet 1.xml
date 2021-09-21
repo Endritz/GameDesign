@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="jumpValue" sid="248890516633318" static="0" type="number">0</variable>
         <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
         <event-block sid="639649187273854">
             <conditions>
@@ -38,7 +39,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="336805997832521" type="System">
-                            <param id="0" name="Layout">Layout 4</param>
+                            <param id="0" name="Layout">LayoutJoey</param>
                         </action>
                     </actions>
                 </event-block>
@@ -48,11 +49,7 @@
                             <param id="0" name="Object">DoorKyle</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="659522505062654" type="System">
-                            <param id="0" name="Layout">LayoutKyle</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="461042785883518">
                     <conditions>
@@ -75,6 +72,18 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="528007301209660" type="System">
                             <param id="0" name="Layout">Layout 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485259331975789">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="283709546899920" type="Player">
+                            <param id="0" name="Object">DoorMain</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="101703261435252" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
                         </action>
                     </actions>
                 </event-block>
@@ -101,11 +110,54 @@
                             <param id="0" name="Object">ScareTrigger</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="362902104754333" type="Audio">
+                            <param id="0" name="Audio file">scream</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="781400493025249" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="457772003899405" type="Player" />
+                        <action id="-15" name="Set visible" sid="919211464218645" type="Jumpscare">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="984461113015515" type="Player">
+                            <param id="0" name="Magnitude">50</param>
+                            <param id="1" name="Duration">3</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="249172109832206" type="System">
+                            <param id="0" name="Variable">jumpValue</param>
+                            <param id="1" name="Value">floor(random(0,3))</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="705475431911523" type="Jumpscare">
+                            <param id="0" name="Frame number">jumpValue</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="716522836249154" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="591473812743444" type="Jumpscare">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="232113577282229" type="ScareTrigger" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds" />
         <event-group description="" sid="600400533847830" title="Player Sprite" />
+        <event-block sid="417195205670820">
+            <conditions>
+                <condition id="-18" name="On created" sid="865181774151100" type="Jumpscare" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="780325683637948" type="Jumpscare">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

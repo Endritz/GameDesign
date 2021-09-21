@@ -17,7 +17,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -59,9 +58,6 @@
             <behaviors>
                 <behavior-type name="8Direction" sid="925140953292226">
                     <behavior id="EightDir" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="667961640025529">
-                    <behavior id="bound" />
                 </behavior-type>
                 <behavior-type name="Solid" sid="403557042805595">
                     <behavior id="solid" />
@@ -137,11 +133,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Background" sid="474180737583881">
+        <object-type name="BGJoey" sid="474180737583881">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977565050103918" speed="5">
-                    <frame duration="1" hotspotX="0.00166667" hotspotY="0.99375" />
+                    <frame duration="1" hotspotX="-0.00131579" hotspotY="0.000943396" original-source="C:\Users\formu\Pictures\joeyroom.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -409,15 +405,25 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638206222690839" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Jumpscare" sid="539954112447517">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125632879195171" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125632879195171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorMain" sid="361542121565683">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525084092412611" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -426,8 +432,8 @@
     <layout-folder>
         <layout>LayoutMain.xml</layout>
         <layout>LayoutAlex.xml</layout>
-        <layout>LayoutKyle.xml</layout>
-        <layout>Layout 4.xml</layout>
+        <layout>LayoutJoey.xml</layout>
+        <layout>Layout 1.xml</layout>
         <layout>Layout 5.xml</layout>
         <layout>Layout 6.xml</layout>
     </layout-folder>
@@ -452,26 +458,8 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="Concrete 1.m4a" />
-        <file name="Concrete 1.ogg" />
-        <file name="Concrete 2.m4a" />
-        <file name="Concrete 2.ogg" />
-        <file name="Forest 1.m4a" />
-        <file name="Forest 1.ogg" />
-        <file name="Forest 2.m4a" />
-        <file name="Forest 2.ogg" />
-        <file name="Grass 1.m4a" />
-        <file name="Grass 1.ogg" />
-        <file name="Grass Running.m4a" />
-        <file name="Grass Running.ogg" />
-        <file name="Gravel - Run.m4a" />
-        <file name="Gravel - Run.ogg" />
-        <file name="Gravel 1.m4a" />
-        <file name="Gravel 1.ogg" />
-        <file name="Sand.m4a" />
-        <file name="Sand.ogg" />
-        <file name="Snow.m4a" />
-        <file name="Snow.ogg" />
+        <file name="scream.m4a" />
+        <file name="scream.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
