@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="8">LayoutMain</layout>
-        <layout order="9">LayoutAlex</layout>
-        <layout order="10">LayerKyle</layout>
-        <layout active="1" order="11">LayoutJoey</layout>
-        <event-sheet order="7">Event sheet 1</event-sheet>
+        <layout order="1">LayoutMain</layout>
+        <layout order="2">LayoutAlex</layout>
+        <layout order="3">LayerKyle</layout>
+        <layout order="4">LayoutJoey</layout>
+        <event-sheet active="1" order="0">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,7 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
@@ -41,13 +41,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/DoorIan/" />
         <folder expanded="1" path="animation-folder/DoorJoey/" />
         <folder expanded="1" path="animation-folder/Lock/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/DoorFinal/" />
         <folder expanded="1" path="animation-folder/ScareTrigger/" />
         <folder expanded="1" path="animation-folder/BGAlex/" />

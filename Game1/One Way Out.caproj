@@ -217,167 +217,6 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Textures\TiledBackground.png" />
         </object-type>
-        <object-type name="Sprite" sid="472855937079052">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826459999012924" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500998" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Shovel\shovel.png">
-                        <collision-poly>
-                            <point x="0.474609" y="0.48503" />
-                            <point x="0.5" y="0.443114" />
-                            <point x="0.556641" y="0.453094" />
-                            <point x="0.525391" y="0.499002" />
-                            <point x="0.5" y="0.540918" />
-                            <point x="0.167969" y="0.828343" />
-                            <point x="0.464844" y="0.499002" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="590811235284139">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="683082656094938">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730181740009327" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\ball.png">
-                        <collision-poly>
-                            <point x="0.175" y="0.175" />
-                            <point x="0.5" y="0.05" />
-                            <point x="0.825" y="0.175" />
-                            <point x="0.95" y="0.5" />
-                            <point x="0.825" y="0.825" />
-                            <point x="0.5" y="0.95" />
-                            <point x="0.175" y="0.825" />
-                            <point x="0.05" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="458014897895512">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="385593580381895">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563257764940514" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\starfish.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.297297" />
-                            <point x="0.875" y="0.135135" />
-                            <point x="0.7" y="0.486486" />
-                            <point x="0.75" y="0.72973" />
-                            <point x="0.5" y="0.783784" />
-                            <point x="0.35" y="0.621622" />
-                            <point x="0.15" y="0.486486" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite4" sid="761158434100718">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="871700898793047">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100514590428728" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\tree2.png">
-                        <collision-poly>
-                            <point x="0.35" y="0.35" />
-                            <point x="0.5" y="0.15" />
-                            <point x="0.7" y="0.3" />
-                            <point x="0.475" y="0.5" />
-                            <point x="0.475" y="0.475" />
-                            <point x="0.5" y="0.425" />
-                            <point x="0.45" y="0.55" />
-                            <point x="0.45" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="986054050294937">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="144631453295144">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808448146057191" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\images before cropping\umbrella.png">
-                        <collision-poly>
-                            <point x="0.107143" y="0.075" />
-                            <point x="0.5" y="0" />
-                            <point x="0.857143" y="0.1" />
-                            <point x="0.535714" y="0.5" />
-                            <point x="0.535714" y="0.675" />
-                            <point x="0.5" y="1" />
-                            <point x="0.464286" y="0.675" />
-                            <point x="0.464286" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite6" sid="470655365288546">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="112140920780636">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426161924936417" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\chair.png">
-                        <collision-poly>
-                            <point x="0.1" y="0.1" />
-                            <point x="0.5" y="0.1" />
-                            <point x="0.65" y="0.35" />
-                            <point x="0.925" y="0.5" />
-                            <point x="0.65" y="0.65" />
-                            <point x="0.5" y="0.85" />
-                            <point x="0.325" y="0.675" />
-                            <point x="0.2" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite7" sid="197700628777020">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="881710754581178">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956773596763207" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Animations\Kyle&apos;s Stuff\crab.png">
-                        <collision-poly>
-                            <point x="0.225" y="0.225" />
-                            <point x="0.5" y="0.1" />
-                            <point x="0.825" y="0.175" />
-                            <point x="0.525" y="0.5" />
-                            <point x="0.525" y="0.525" />
-                            <point x="0.5" y="0.525" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.5" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="DoorFinal" sid="430276349915451">
             <plugin id="Sprite" />
             <animation-folder>
@@ -483,6 +322,10 @@
     <sounds-folder>
         <file name="scream.m4a" />
         <file name="scream.ogg" />
+        <file name="Concrete 1.m4a" />
+        <file name="Concrete 1.ogg" />
+        <file name="soundtrack.m4a" />
+        <file name="soundtrack.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
