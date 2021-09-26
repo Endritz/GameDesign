@@ -31,7 +31,7 @@
             <instances>
                 <instance type="EndScreen" uid="684">
                     <properties>
-                        <text>You are Winner :)</text>
+                        <text>Congratulations! You Made It Out!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-64,400,0</font>
                         <color>255,255,255</color>
@@ -44,8 +44,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>40</x>
-                        <y>80</y>
+                        <x>400</x>
+                        <y>280</y>
                         <z>0</z>
                         <width>520</width>
                         <height>160</height>
