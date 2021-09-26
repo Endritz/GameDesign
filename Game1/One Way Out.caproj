@@ -325,6 +325,15 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="224642555776784">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controls" sid="645519535770481">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controls2" sid="641189744191070">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
