@@ -289,6 +289,10 @@
         <object-type name="Objective" sid="771696456830957">
             <plugin id="Text" />
         </object-type>
+        <object-type name="BGIan" sid="844250820877938">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\giant\Downloads\pixil-frame-0 (12).png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -296,7 +300,7 @@
         <layout>LayoutAlex.xml</layout>
         <layout>LayoutJoey.xml</layout>
         <layout>LayerKyle.xml</layout>
-        <layout>Layout 5.xml</layout>
+        <layout>LayerIan.xml</layout>
         <layout>End.xml</layout>
     </layout-folder>
     <event-folder>
