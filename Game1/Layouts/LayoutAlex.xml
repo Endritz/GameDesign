@@ -5261,21 +5261,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorJoey" uid="688">
+                <instance type="Wall" uid="687">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3</x>
-                        <y>841</y>
+                        <x>-3</x>
+                        <y>122</y>
                         <z>0</z>
-                        <width>40</width>
-                        <height>40</height>
+                        <width>81</width>
+                        <height>82</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -5283,7 +5290,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DoorJoey" uid="692">
+                <instance type="DoorJoey2" uid="688">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -5293,10 +5300,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>43</x>
-                        <y>844</y>
+                        <x>-3</x>
+                        <y>839</y>
                         <z>0</z>
-                        <width>40</width>
+                        <width>95</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

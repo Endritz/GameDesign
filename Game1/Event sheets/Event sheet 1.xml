@@ -58,7 +58,7 @@
                 <event-block sid="461042785883518">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="691070518529901" type="Player">
-                            <param id="0" name="Object">where</param>
+                            <param id="0" name="Object">DoorIan</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -88,6 +88,18 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="101703261435252" type="System">
                             <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="649503480737996">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="266543241450796" type="Player">
+                            <param id="0" name="Object">DoorJoey2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="436932241972679" type="System">
+                            <param id="0" name="Layout">LayoutJoey</param>
                         </action>
                     </actions>
                 </event-block>
@@ -170,6 +182,42 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="433591244285189">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="349060672900245" type="Player">
+                    <param id="0" name="Object">DoorMain2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="879446547119895" type="System">
+                    <param id="0" name="Layout">LayoutMain</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="511335169651045">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="309412384805399" type="Player">
+                    <param id="0" name="Object">DoorMain3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="400519505208325" type="System">
+                    <param id="0" name="Layout">LayoutMain</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926435381431328">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="242445732968841" type="Player">
+                    <param id="0" name="Object">DoorIan2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="494927147247486" type="System">
+                    <param id="0" name="Layout">LayerIan</param>
                 </action>
             </actions>
         </event-block>
