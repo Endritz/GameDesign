@@ -249,16 +249,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Jumpscare" sid="539954112447517">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125632879195171" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare3.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="DoorMain" sid="361542121565683">
             <plugin id="Sprite" />
             <animation-folder>
@@ -292,6 +282,16 @@
         <object-type name="BGIan" sid="844250820877938">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\giant\Downloads\pixil-frame-0 (12).png" />
+        </object-type>
+        <object-type name="Jumpscare" sid="605750845558327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743006063205161" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare3.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

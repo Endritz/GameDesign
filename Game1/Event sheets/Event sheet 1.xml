@@ -126,9 +126,6 @@
                         <action id="-16" name="Wait" sid="781400493025249" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="919211464218645" type="Jumpscare">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="984461113015515" type="Player">
                             <param id="0" name="Magnitude">50</param>
                             <param id="1" name="Duration">3</param>
@@ -138,14 +135,8 @@
                             <param id="0" name="Variable">jumpValue</param>
                             <param id="1" name="Value">floor(random(0,3))</param>
                         </action>
-                        <action id="5" name="Set frame" sid="705475431911523" type="Jumpscare">
-                            <param id="0" name="Frame number">jumpValue</param>
-                        </action>
                         <action id="-16" name="Wait" sid="716522836249154" type="System">
                             <param id="0" name="Seconds">3</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="591473812743444" type="Jumpscare">
-                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -153,16 +144,6 @@
         </event-group>
         <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds" />
         <event-group description="" sid="600400533847830" title="Player Sprite" />
-        <event-block sid="417195205670820">
-            <conditions>
-                <condition id="-18" name="On created" sid="865181774151100" type="Jumpscare" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="780325683637948" type="Jumpscare">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="427299622128509">
             <conditions>
                 <condition behavior="8Direction" id="0" name="Is moving" sid="471962379559420" type="Player" />
