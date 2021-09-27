@@ -4458,6 +4458,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="DoorIan" uid="41">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>372</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>116</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -4513,12 +4535,12 @@
                         <x>640</x>
                         <y>639</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>40</width>
+                        <height>40</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>-3.138864994</angle>
+                        <hotspotX>0.5625</hotspotX>
+                        <hotspotY>0.476190478</hotspotY>
+                        <angle>-0.010155858</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -4545,28 +4567,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="DoorIan" uid="41">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2</x>
-                        <y>358</y>
-                        <z>0</z>
-                        <width>40</width>
-                        <height>116</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

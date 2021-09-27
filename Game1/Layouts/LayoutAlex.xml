@@ -3452,7 +3452,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>161</x>
-                        <y>387</y>
+                        <y>419</y>
                         <z>0</z>
                         <width>40</width>
                         <height>40</height>
@@ -5364,15 +5364,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>41</x>
-                        <y>749</y>
+                        <x>47</x>
+                        <y>725</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>40</width>
+                        <height>52.5</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>-3.138864994</angle>
+                        <hotspotX>0.5625</hotspotX>
+                        <hotspotY>0.476190478</hotspotY>
+                        <angle>0.000747265</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -5408,7 +5408,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>45</speed>
+                                <speed>60</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -5425,8 +5425,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1286.5</x>
-                        <y>739.157897949</y>
+                        <x>1279</x>
+                        <y>690</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -5447,7 +5447,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>45</speed>
+                                <speed>60</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>

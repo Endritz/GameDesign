@@ -71,7 +71,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="259758315041348" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.47619" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

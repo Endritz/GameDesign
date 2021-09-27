@@ -17,6 +17,20 @@
                 <action id="-9" name="Destroy" sid="216023786165031" type="Lock" />
             </actions>
         </event-block>
+        <event-block sid="283910310310314">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="911959934131540" type="System" />
+            </conditions>
+            <actions>
+                <action id="-40" name="Set fullscreen scaling" sid="443428458527463" type="System">
+                    <param id="0" name="Fullscreen scaling">1</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="167750681933180" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="537857939930872" title="Player Interactions">
             <sub-events>
                 <event-block sid="821883686116720">
@@ -118,10 +132,6 @@
                             <param id="0" name="Variable">Keys</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="110841466329232" type="Chest1">
-                            <param id="0" name="Animation">&quot;Closed&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="303776324154147">
@@ -188,7 +198,7 @@
                 <action id="0" name="Play" sid="483503239056267" type="Audio">
                     <param id="0" name="Audio file">Concrete 1</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
+                    <param id="3" name="Volume">-15</param>
                     <param id="1" name="Tag (optional)">&quot;Footsteps&quot;</param>
                 </action>
             </actions>
@@ -200,8 +210,8 @@
             <actions>
                 <action id="0" name="Play" sid="596820058939666" type="Audio">
                     <param id="0" name="Audio file">soundtrack</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
                 </action>
             </actions>
@@ -213,6 +223,58 @@
             <actions>
                 <action id="3" name="Start" sid="223837340453019" type="Player">
                     <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508276372816977">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="198669937484285" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="618697073337127" type="Player">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="556371629269583">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="866514174303276" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="444542921019059" type="Player">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="146789189714879">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="153491756948697" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="925234688647519" type="Player">
+                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249342068524814">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="803734402644714" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="253220343114003" type="Player">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
