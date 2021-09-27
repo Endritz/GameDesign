@@ -103,6 +103,23 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="149610022469117">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="476575022666104" type="Player">
+                            <param id="0" name="Object">Chest1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="849247132935821" type="Chest1">
+                            <param id="0" name="Animation">&quot;Open&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="795402012462637" type="System">
+                            <param id="0" name="Variable">Keys</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="303776324154147">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="422249046486193" type="Player">
