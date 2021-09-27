@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -342,6 +343,54 @@
         </object-type>
         <object-type name="Controls2" sid="641189744191070">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Monster" sid="323834160723700">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="464024823334059">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935076858095663" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="D:\Game Design Shit\Assets\Pixel Art Top Down - Basic\Texture\Monster Idle.png">
+                        <collision-poly>
+                            <point x="0.13" y="0.136842" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9" y="0.105263" />
+                            <point x="0.79" y="0.494737" />
+                            <point x="0.87" y="0.863158" />
+                            <point x="0.5" y="0.894737" />
+                            <point x="0.13" y="0.863158" />
+                            <point x="0.23" y="0.494737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arrow" sid="228546673226733">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="459852261401523">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309617993500922" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.521739" original-source="D:\Game Design Shit\Assets\Pixel Art Top Down - Basic\Texture\arrow.png">
+                        <collision-poly>
+                            <point x="0.851064" y="0.304348" />
+                            <point x="1" y="0.478261" />
+                            <point x="0.851064" y="0.695652" />
+                            <point x="0.510638" y="0.695652" />
+                            <point x="0" y="1" />
+                            <point x="0.0425532" y="0.478261" />
+                            <point x="0" y="0" />
+                            <point x="0.510638" y="0.304348" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

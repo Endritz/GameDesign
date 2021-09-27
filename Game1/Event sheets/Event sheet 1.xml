@@ -221,5 +221,72 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="169216984239240">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="837952144380530" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="270838815874337" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="313294045761681">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="224351659693115" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="961939972492186" type="Player">
+                    <param id="0" name="Object">Arrow</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="160885145099088">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="576601229909496" type="Arrow">
+                    <param id="0" name="Object">Monster</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="176541489172709" type="Monster">
+                    <param id="0" name="Distance">-20</param>
+                </action>
+                <action id="-9" name="Destroy" sid="900193865060169" type="Arrow" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="195868961221427" title="Monster" />
+        <event-block sid="773267867425430">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="293240795378564" type="Monster" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="902347312680339" type="Monster">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255630186955198">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="786098354758500" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="369907198682297" type="Monster">
+                    <param id="0" name="Angle">random(360)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="579823145666429">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="170458218800462" type="Monster">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="116930904301250" type="Player" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
