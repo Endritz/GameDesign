@@ -118,6 +118,10 @@
                             <param id="0" name="Variable">Keys</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="110841466329232" type="Chest1">
+                            <param id="0" name="Animation">&quot;Closed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="303776324154147">
@@ -199,6 +203,16 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514615319068024">
+            <conditions>
+                <condition id="5" name="On any finished" sid="233070267725172" type="Player" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="223837340453019" type="Player">
+                    <param id="0" name="From">1</param>
                 </action>
             </actions>
         </event-block>
