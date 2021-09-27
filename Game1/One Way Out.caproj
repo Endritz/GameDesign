@@ -53,7 +53,7 @@
         <object-type name="Audio" sid="583289055908773">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Player" sid="247223654786015">
+        <object-type global="1" name="Player" sid="247223654786015">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="925140953292226">
@@ -167,6 +167,130 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< Updated upstream
+=======
+        <object-type name="TiledBackground" sid="347147518890058">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\kylep\Desktop\GameDesign\Game1\Textures\TiledBackground.png" />
+        </object-type>
+        <object-type name="DoorFinal" sid="430276349915451">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648113833869655" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScareTrigger" sid="739864223513767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584685318969678" speed="5">
+                    <frame duration="1" hotspotX="-0.004" hotspotY="1.004" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGAlex" sid="235374076247518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645338055907095" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.00234467" original-source="C:\Users\formu\Pictures\IHATEYOUJOHNNY.JPG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chest" sid="807423395023541">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638206222690839" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorMain" sid="361542121565683">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525084092412611" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGMain" sid="320852094276884">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747268485349291" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\main_room_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGKyle" sid="233660130964243">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427159578068157" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.00338983" original-source="Z:\Users\user\Downloads\image004.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EndScreen" sid="143547921260270">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Objective" sid="771696456830957">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BGIan" sid="844250820877938">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\giant\Downloads\pixil-frame-0 (12).png" />
+        </object-type>
+        <object-type name="Jumpscare" sid="605750845558327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743006063205161" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\formu\Pictures\scare3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorIan2" sid="606284521963856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492035370747087" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorJoey2" sid="950262081857827">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666503525102267" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorMain2" sid="701636395395377">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801813323467343" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorMain3" sid="713967447779844">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440849949917989" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="224642555776784">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controls" sid="645519535770481">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controls2" sid="641189744191070">
+            <plugin id="Text" />
+        </object-type>
+>>>>>>> Stashed changes
     </object-folder>
     <families />
     <layout-folder>

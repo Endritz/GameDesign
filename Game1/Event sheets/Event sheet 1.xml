@@ -3,9 +3,128 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+<<<<<<< Updated upstream
+=======
+        <variable constant="0" name="soundStart" sid="702519377140479" static="0" type="number">0</variable>
+        <variable constant="0" name="spawnID" sid="874599635876163" static="0" type="number">0</variable>
+        <variable constant="0" name="jumpValue" sid="248890516633318" static="0" type="number">0</variable>
+>>>>>>> Stashed changes
         <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
         <event-group description="" sid="537857939930872" title="Player Interactions">
             <sub-events>
+<<<<<<< Updated upstream
+=======
+                <event-block sid="821883686116720">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
+                            <param id="0" name="Object">DoorAlex</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="556135026058857" type="Player" />
+                        <action id="-2" name="Go to layout" sid="395451693643409" type="System">
+                            <param id="0" name="Layout">LayoutAlex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571259451665201">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="356662828895077" type="Player">
+                            <param id="0" name="Object">DoorKyle</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="388482526726079" type="Player" />
+                        <action id="-2" name="Go to layout" sid="154075651260292" type="System">
+                            <param id="0" name="Layout">LayerKyle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="461042785883518">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="691070518529901" type="Player">
+                            <param id="0" name="Object">DoorIan</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="903033293398491" type="Player" />
+                        <action id="-2" name="Go to layout" sid="147521996228396" type="System">
+                            <param id="0" name="Layout">LayerIan</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="934954866490939">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="736697978294851" type="Player">
+                            <param id="0" name="Object">DoorFinal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="873743474814006" type="Player" />
+                        <action id="-2" name="Go to layout" sid="528007301209660" type="System">
+                            <param id="0" name="Layout">End</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485259331975789">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="283709546899920" type="Player">
+                            <param id="0" name="Object">DoorMain</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="693265828356407" type="Player" />
+                        <action id="-2" name="Go to layout" sid="101703261435252" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879387011619779">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="792015795299115" type="Player">
+                            <param id="0" name="Object">DoorJoey</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="538388593565987" type="Player" />
+                        <action id="-2" name="Go to layout" sid="336805997832521" type="System">
+                            <param id="0" name="Layout">LayoutJoey</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="155672374833769" type="Player" />
+                        <action id="-9" name="Set value" sid="296815086996227" type="System">
+                            <param id="0" name="Variable">spawnID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="649503480737996">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="266543241450796" type="Player">
+                            <param id="0" name="Object">DoorJoey2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="404738561765175" type="Player" />
+                        <action id="-2" name="Go to layout" sid="436932241972679" type="System">
+                            <param id="0" name="Layout">LayoutJoey</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="939721997455518" type="System">
+                            <param id="0" name="Object to create">Player</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">1360</param>
+                            <param id="3" name="Y">80</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="756141246661526" type="Player" />
+                        <action id="-15" name="Set visible" sid="450769053109753" type="Player">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="229821787869669" type="System">
+                            <param id="0" name="Variable">spawnID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+>>>>>>> Stashed changes
                 <event-block sid="303776324154147">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="422249046486193" type="Player">
@@ -23,6 +142,7 @@
                         </action>
                     </actions>
                 </event-block>
+<<<<<<< Updated upstream
             </sub-events>
         </event-group>
         <event-block sid="639649187273854">
@@ -52,5 +172,121 @@
                 </action>
             </actions>
         </event-block>
+=======
+                <event-block sid="518820997262839">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="935065158486502" type="Player">
+                            <param id="0" name="Object">ScareTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="457772003899405" type="Player" />
+                        <action id="-9" name="Destroy" sid="232113577282229" type="ScareTrigger" />
+                        <action id="0" name="Play" sid="362902104754333" type="Audio">
+                            <param id="0" name="Audio file">scream</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="781400493025249" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="984461113015515" type="Player">
+                            <param id="0" name="Magnitude">50</param>
+                            <param id="1" name="Duration">3</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="249172109832206" type="System">
+                            <param id="0" name="Variable">jumpValue</param>
+                            <param id="1" name="Value">floor(random(0,3))</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="716522836249154" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="433591244285189">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="349060672900245" type="Player">
+                            <param id="0" name="Object">DoorMain2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="879446547119895" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="511335169651045">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="309412384805399" type="Player">
+                            <param id="0" name="Object">DoorMain3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="400519505208325" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="926435381431328">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="242445732968841" type="Player">
+                            <param id="0" name="Object">DoorIan2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="494927147247486" type="System">
+                            <param id="0" name="Layout">LayerIan</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds">
+            <sub-events>
+                <event-block sid="427299622128509">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="471962379559420" type="Player" />
+                        <condition id="-6" name="Every X seconds" sid="172369121970094" type="System">
+                            <param id="0" name="Interval (seconds)">1/3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="483503239056267" type="Audio">
+                            <param id="0" name="Audio file">Concrete 1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Footsteps&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="755492625983667">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="615367788145505" type="System" />
+                        <condition id="-14" name="Compare variable" sid="859709038429823" type="System">
+                            <param id="0" name="Variable">soundStart</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="596820058939666" type="Audio">
+                            <param id="0" name="Audio file">soundtrack</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="815704455190774" type="System">
+                            <param id="0" name="Variable">soundStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="600400533847830" title="Player Sprite" />
+        <event-group description="Dictates where player will spawn (hopefully)" sid="983863332845992" title="SpawnIDs" />
+>>>>>>> Stashed changes
     </events>
 </c2eventsheet>
