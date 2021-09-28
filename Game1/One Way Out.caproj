@@ -30,11 +30,12 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>600</width>
-        <height>520</height>
+        <width>1280</width>
+        <height>720</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>LayoutMain</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -45,7 +46,7 @@
         <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
-        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Physics engine">Box2D web</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
@@ -74,50 +75,50 @@
             <animation-folder>
                 <animation framecount="4" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="259758315041348" speed="5">
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.47619" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.45" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.45" />
                 </animation>
                 <animation framecount="4" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="330866800281477" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.45" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.47619" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="810161667619782" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.409091" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.409091" />
                 </animation>
                 <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="950345717203316" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.409091" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="4" loop="0" name="UpLeft" pingpong="0" repeatcount="1" repeatto="0" sid="223695395605718" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.454545" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="4" loop="0" name="UpRight" pingpong="0" repeatcount="1" repeatto="0" sid="108042934220563" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.428571" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.45" />
                 </animation>
                 <animation framecount="4" loop="0" name="DownLeft" pingpong="0" repeatcount="1" repeatto="0" sid="604222710094309" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.454545" />
                 </animation>
                 <animation framecount="4" loop="0" name="DownRight" pingpong="0" repeatcount="1" repeatto="0" sid="722980919381366" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.47619" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -518,6 +519,182 @@
                             <point x="0.97619" y="0.890909" />
                             <point x="0.0238095" y="0.890909" />
                             <point x="0.0238095" y="0.527273" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Zombie" sid="506116942572076">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="235608265848557">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="376839361079612">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="436615850412980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.37931" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\big_zombie_run_anim_f0.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.85" y="0.103448" />
+                            <point x="0.95" y="0.37931" />
+                            <point x="0.95" y="0.724138" />
+                            <point x="0.5" y="0.931035" />
+                            <point x="0.05" y="0.724138" />
+                            <point x="0.1" y="0.37931" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="751897853367454" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.357143" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\big_zombie_run_anim_f0.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.178571" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.8" y="0.107143" />
+                            <point x="0.95" y="0.357143" />
+                            <point x="0.95" y="0.714286" />
+                            <point x="0.5" y="0.928571" />
+                            <point x="0.05" y="0.714286" />
+                            <point x="0.1" y="0.357143" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.548387" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\big_zombie_run_anim_f1.png">
+                        <collision-poly>
+                            <point x="0.227273" y="0.322581" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.863636" y="0.258065" />
+                            <point x="0.954545" y="0.903226" />
+                            <point x="0.5" y="0.870968" />
+                            <point x="0.0454545" y="0.903226" />
+                            <point x="0.0909091" y="0.548387" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.485714" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\big_zombie_run_anim_f2.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.314286" />
+                            <point x="0.52381" y="0.0571429" />
+                            <point x="0.857143" y="0.257143" />
+                            <point x="0.904762" y="0.485714" />
+                            <point x="0.904762" y="0.742857" />
+                            <point x="0.52381" y="0.828571" />
+                            <point x="0.047619" y="0.8" />
+                            <point x="0.0952381" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.419355" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\big_zombie_run_anim_f3.png">
+                        <collision-poly>
+                            <point x="0.363636" y="0.290323" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.727273" y="0.225806" />
+                            <point x="0.909091" y="0.419355" />
+                            <point x="0.954545" y="0.774194" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.0454545" y="0.774194" />
+                            <point x="0.181818" y="0.419355" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Knight" sid="273860964905095">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="838307301633625">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="118734231704787">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="723928175461107">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="743949373879272" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.318182" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_idle_anim_f0.png">
+                        <collision-poly>
+                            <point x="0.764706" y="0.227273" />
+                            <point x="0.529412" y="0.0909091" />
+                            <point x="0.529412" y="0.0454545" />
+                            <point x="0.941176" y="0.318182" />
+                            <point x="0.823529" y="0.818182" />
+                            <point x="0.529412" y="0.863636" />
+                            <point x="0.235294" y="0.818182" />
+                            <point x="0.235294" y="0.318182" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Right" pingpong="1" repeatcount="1" repeatto="0" sid="615713395300828" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.318182" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_idle_anim_f1.png">
+                        <collision-poly>
+                            <point x="0.529412" y="0.0909091" />
+                            <point x="0.529412" y="0.0454545" />
+                            <point x="0.823529" y="0.318182" />
+                            <point x="0.823529" y="0.818182" />
+                            <point x="0.529412" y="0.909091" />
+                            <point x="0.235294" y="0.818182" />
+                            <point x="0.235294" y="0.318182" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.363636" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_run_anim_f0.png">
+                        <collision-poly>
+                            <point x="0.470588" y="0.0454545" />
+                            <point x="0.529412" y="0.0909091" />
+                            <point x="0.529412" y="0.0909091" />
+                            <point x="0.941176" y="0.363636" />
+                            <point x="0.823529" y="0.863636" />
+                            <point x="0.235294" y="0.863636" />
+                            <point x="0.235294" y="0.363636" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.409091" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_run_anim_f1.png">
+                        <collision-poly>
+                            <point x="0.411765" y="0.0454545" />
+                            <point x="0.529412" y="0.0909091" />
+                            <point x="0.588235" y="0.0909091" />
+                            <point x="0.941176" y="0.409091" />
+                            <point x="0.823529" y="0.909091" />
+                            <point x="0.529412" y="0.863636" />
+                            <point x="0.176471" y="0.954545" />
+                            <point x="0.235294" y="0.409091" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.391304" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_run_anim_f2.png">
+                        <collision-poly>
+                            <point x="0.411765" y="0.0434783" />
+                            <point x="0.529412" y="0.0869565" />
+                            <point x="0.588235" y="0.0869565" />
+                            <point x="0.941176" y="0.391304" />
+                            <point x="0.823529" y="0.869565" />
+                            <point x="0.529412" y="0.869565" />
+                            <point x="0.176471" y="0.913043" />
+                            <point x="0.235294" y="0.391304" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.375" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_run_anim_f3.png">
+                        <collision-poly>
+                            <point x="0.470588" y="0.0833333" />
+                            <point x="0.529412" y="0.125" />
+                            <point x="0.529412" y="0.125" />
+                            <point x="0.941176" y="0.375" />
+                            <point x="0.823529" y="0.833333" />
+                            <point x="0.529412" y="0.958333" />
+                            <point x="0.235294" y="0.833333" />
+                            <point x="0.235294" y="0.375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.285714" original-source="D:\Game Design Shit\Assets\0x72_DungeonTilesetII_v1.4\frames\knight_f_idle_anim_f3.png">
+                        <collision-poly>
+                            <point x="0.529412" y="0.0952381" />
+                            <point x="0.470588" y="0.047619" />
+                            <point x="0.823529" y="0.285714" />
+                            <point x="0.823529" y="0.809524" />
+                            <point x="0.529412" y="0.904762" />
+                            <point x="0.235294" y="0.809524" />
+                            <point x="0.235294" y="0.285714" />
                         </collision-poly>
                     </frame>
                 </animation>
