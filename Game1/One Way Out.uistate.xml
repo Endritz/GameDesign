@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">LayoutMain</layout>
-        <layout order="2">LayoutAlex</layout>
+        <layout order="1">LayoutMain</layout>
+        <layout active="1" order="2">LayoutAlex</layout>
         <layout order="3">LayerKyle</layout>
         <layout order="4">LayoutJoey</layout>
         <layout order="5">LayerIan</layout>
@@ -58,5 +58,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Monster/" />
         <folder expanded="1" path="animation-folder/Arrow/" />
         <folder expanded="1" path="animation-folder/Chest1/" />
+        <folder expanded="1" path="animation-folder/SignEast/" />
+        <folder expanded="1" path="animation-folder/SignWest/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/LockedDoor/" />
     </folders-expanded>
 </c2uistate>

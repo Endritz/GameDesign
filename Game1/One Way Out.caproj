@@ -19,6 +19,8 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -386,6 +388,14 @@
         </object-type>
         <object-type name="Chest1" sid="143759494192744">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="738908766287012">
+                    <behavior id="Persist" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="497408638640546">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="303678634764749" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="D:\Game Design Shit\Assets\Pixel Art Top Down - Basic\Texture\Chest Closed.png">
@@ -408,6 +418,106 @@
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignEast" sid="245077356666657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200898712921479" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.558824" original-source="D:\Game Design Shit\Assets\zips\Pixilart selection.png">
+                        <collision-poly>
+                            <point x="0.0344828" y="0.147059" />
+                            <point x="0.482759" y="0.0294118" />
+                            <point x="0.896552" y="0.205882" />
+                            <point x="0.551724" y="0.529412" />
+                            <point x="0.551724" y="0.588235" />
+                            <point x="0.482759" y="0.970588" />
+                            <point x="0.344828" y="0.676471" />
+                            <point x="0.344828" y="0.529412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignWest" sid="195875049967375">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458160082915730" speed="5">
+                    <frame duration="1" hotspotX="0.586207" hotspotY="0.558824" original-source="D:\Game Design Shit\Assets\zips\West.png">
+                        <collision-poly>
+                            <point x="0.448276" y="0.705882" />
+                            <point x="0.586207" y="0.0294118" />
+                            <point x="0.655172" y="0.764706" />
+                            <point x="0.655172" y="0.558824" />
+                            <point x="0.793103" y="0.470588" />
+                            <point x="0.586207" y="0.970588" />
+                            <point x="0.37931" y="0.470588" />
+                            <point x="0.448276" y="0.558824" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="705477603914964">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="421095406542940" speed="5">
+                    <frame duration="1" hotspotX="0.55814" hotspotY="0.5" original-source="D:\Game Design Shit\Assets\zips\DoorClosed.png">
+                        <collision-poly>
+                            <point x="0.139535" y="0.115385" />
+                            <point x="0.55814" y="0.0192308" />
+                            <point x="0.906977" y="0.173077" />
+                            <point x="0.930233" y="0.5" />
+                            <point x="0.930233" y="0.846154" />
+                            <point x="0.55814" y="0.980769" />
+                            <point x="0.0697674" y="0.942308" />
+                            <point x="0.0697674" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="398636519495888" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.527273" original-source="D:\Game Design Shit\Assets\zips\DoorOpen.png">
+                        <collision-poly>
+                            <point x="0.047619" y="0.181818" />
+                            <point x="0.952381" y="0.181818" />
+                            <point x="0.97619" y="0.527273" />
+                            <point x="0.97619" y="0.890909" />
+                            <point x="0.0238095" y="0.890909" />
+                            <point x="0.0238095" y="0.527273" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LockedDoor" sid="184992603573630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="CLOSED" pingpong="0" repeatcount="1" repeatto="0" sid="938993406538645" speed="5">
+                    <frame duration="1" hotspotX="0.55814" hotspotY="0.5" original-source="D:\Game Design Shit\Assets\zips\DoorClosed.png">
+                        <collision-poly>
+                            <point x="0.139535" y="0.115385" />
+                            <point x="0.55814" y="0.0192308" />
+                            <point x="0.906977" y="0.173077" />
+                            <point x="0.930233" y="0.5" />
+                            <point x="0.930233" y="0.846154" />
+                            <point x="0.55814" y="0.980769" />
+                            <point x="0.0697674" y="0.942308" />
+                            <point x="0.0697674" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="OPEN" pingpong="0" repeatcount="1" repeatto="0" sid="489732018299619" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.527273" original-source="D:\Game Design Shit\Assets\zips\DoorOpen.png">
+                        <collision-poly>
+                            <point x="0.047619" y="0.181818" />
+                            <point x="0.952381" y="0.181818" />
+                            <point x="0.97619" y="0.527273" />
+                            <point x="0.97619" y="0.890909" />
+                            <point x="0.0238095" y="0.890909" />
+                            <point x="0.0238095" y="0.527273" />
                         </collision-poly>
                     </frame>
                 </animation>

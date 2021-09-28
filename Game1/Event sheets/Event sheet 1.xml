@@ -15,6 +15,10 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="216023786165031" type="Lock" />
+                <action id="4" name="Set animation" sid="796531281847872" type="LockedDoor">
+                    <param id="0" name="Animation">&quot;OPEN&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="283910310310314">
@@ -128,9 +132,23 @@
                             <param id="0" name="Animation">&quot;Open&quot;</param>
                             <param id="1" name="From">0</param>
                         </action>
-                        <action id="-10" name="Add to" sid="795402012462637" type="System">
-                            <param id="0" name="Variable">Keys</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="0" name="Spawn another object" sid="958308486136862" type="Chest1">
+                            <param id="0" name="Object">Key</param>
+                            <param id="1" name="Layer">Self.BBoxTop</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847404061601834">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="461762643701126" type="Player">
+                            <param id="0" name="Object">Door</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="423774281435854" type="Door">
+                            <param id="0" name="Animation">&quot;Open&quot;</param>
+                            <param id="1" name="From">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -138,9 +156,6 @@
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="422249046486193" type="Player">
                             <param id="0" name="Object">Key</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="529591872978703" type="Keyboard">
-                            <param id="0" name="Key">32</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -311,6 +326,10 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="494927147247486" type="System">
                     <param id="0" name="Layout">LayerIan</param>
+                </action>
+                <action id="4" name="Set animation" sid="368981595190881" type="Door">
+                    <param id="0" name="Animation">&quot;Closed&quot;</param>
+                    <param id="1" name="From">0</param>
                 </action>
             </actions>
         </event-block>
