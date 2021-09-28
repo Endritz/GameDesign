@@ -365,8 +365,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds" />
-        <event-group description="" sid="600400533847830" title="Player Stuff">
+        <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds">
             <sub-events>
                 <event-block sid="427299622128509">
                     <conditions>
@@ -382,6 +381,93 @@
                             <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;Footsteps&quot;</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="755492625983667">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="615367788145505" type="System" />
+                        <condition id="-14" name="Compare variable" sid="919577267818668" type="System">
+                            <param id="0" name="Variable">layoutID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="596820058939666" type="Audio">
+                            <param id="0" name="Audio file">soundtrack</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="301328454309525" type="System">
+                            <param id="0" name="Variable">layoutID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="600400533847830" title="Player Stuff">
+            <sub-events>
+                <event-block sid="682135990934397">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="911934788701315" type="Arrow">
+                            <param id="0" name="Object">Wall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="293964465491747" type="Arrow" />
+                    </actions>
+                </event-block>
+                <event-block sid="734359335079120">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="352175271782416" type="Arrow">
+                            <param id="0" name="Object">Zombie</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="328758192949394" type="Zombie">
+                            <param id="0" name="Distance">-15</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="495029639561002" type="Arrow" />
+                    </actions>
+                </event-block>
+                <event-block sid="160885145099088">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="576601229909496" type="Arrow">
+                            <param id="0" name="Object">Monster</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="176541489172709" type="Monster">
+                            <param id="0" name="Distance">-20</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="900193865060169" type="Arrow" />
+                    </actions>
+                </event-block>
+                <event-block sid="313294045761681">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="224351659693115" type="Keyboard">
+                            <param id="0" name="Key">81</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="961939972492186" type="Player">
+                            <param id="0" name="Object">Arrow</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="636060475128941" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169216984239240">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="837952144380530" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="270838815874337" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="508276372816977">
@@ -480,89 +566,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="755492625983667">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="615367788145505" type="System" />
-                <condition id="-14" name="Compare variable" sid="919577267818668" type="System">
-                    <param id="0" name="Variable">layoutID</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="596820058939666" type="Audio">
-                    <param id="0" name="Audio file">soundtrack</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
-                </action>
-                <action id="-10" name="Add to" sid="301328454309525" type="System">
-                    <param id="0" name="Variable">layoutID</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="169216984239240">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="837952144380530" type="Player" />
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="270838815874337" type="System" />
-            </actions>
-        </event-block>
-        <event-block sid="313294045761681">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="224351659693115" type="Keyboard">
-                    <param id="0" name="Key">81</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="961939972492186" type="Player">
-                    <param id="0" name="Object">Arrow</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="636060475128941" type="System">
-                    <param id="0" name="Seconds">1.5</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="160885145099088">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="576601229909496" type="Arrow">
-                    <param id="0" name="Object">Monster</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-17" name="Move forward" sid="176541489172709" type="Monster">
-                    <param id="0" name="Distance">-20</param>
-                </action>
-                <action id="-9" name="Destroy" sid="900193865060169" type="Arrow" />
-            </actions>
-        </event-block>
-        <event-block sid="734359335079120">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="352175271782416" type="Arrow">
-                    <param id="0" name="Object">Zombie</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-17" name="Move forward" sid="328758192949394" type="Zombie">
-                    <param id="0" name="Distance">-15</param>
-                </action>
-                <action id="-9" name="Destroy" sid="495029639561002" type="Arrow" />
-            </actions>
-        </event-block>
-        <event-block sid="682135990934397">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="911934788701315" type="Arrow">
-                    <param id="0" name="Object">Wall</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="293964465491747" type="Arrow" />
-            </actions>
-        </event-block>
         <event-group description="" sid="195868961221427" title="Monster">
             <sub-events>
                 <event-block sid="773267867425430">
