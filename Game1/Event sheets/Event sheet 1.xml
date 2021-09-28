@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="Xpos" sid="522619308346008" static="0" type="number">643</variable>
         <variable constant="0" name="YPos" sid="242593910368612" static="0" type="number">541</variable>
-        <variable constant="0" name="jumpValue" sid="248890516633318" static="0" type="number">0</variable>
+        <variable constant="0" name="layoutID" sid="248890516633318" static="0" type="number">0</variable>
         <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
         <event-block sid="639649187273854">
             <conditions>
@@ -276,11 +276,16 @@
                             <param id="0" name="Animation">&quot;Open&quot;</param>
                             <param id="1" name="From">0</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="958308486136862" type="Chest1">
-                            <param id="0" name="Object">Key</param>
-                            <param id="1" name="Layer">Self.BBoxTop</param>
-                            <param id="2" name="Image point">0</param>
+                        <action id="-3" name="Create object" sid="958308486136862" type="System">
+                            <param id="0" name="Object to create">Key</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">chest1.X</param>
+                            <param id="3" name="Y">chest1.Y</param>
                         </action>
+                        <action id="-16" name="Wait" sid="559274392534224" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="299542799655556" type="Chest1" />
                     </actions>
                 </event-block>
                 <event-block sid="847404061601834">
@@ -292,6 +297,22 @@
                     <actions>
                         <action id="4" name="Set animation" sid="423774281435854" type="Door">
                             <param id="0" name="Animation">&quot;Open&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="926435381431328">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="242445732968841" type="Player">
+                            <param id="0" name="Object">DoorIan2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="494927147247486" type="System">
+                            <param id="0" name="Layout">LayerIan</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="368981595190881" type="Door">
+                            <param id="0" name="Animation">&quot;Closed&quot;</param>
                             <param id="1" name="From">0</param>
                         </action>
                     </actions>
@@ -334,7 +355,7 @@
                             <param id="2" name="Mode">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="249172109832206" type="System">
-                            <param id="0" name="Variable">jumpValue</param>
+                            <param id="0" name="Variable">layoutID</param>
                             <param id="1" name="Value">floor(random(0,3))</param>
                         </action>
                         <action id="-16" name="Wait" sid="716522836249154" type="System">
@@ -345,26 +366,128 @@
             </sub-events>
         </event-group>
         <event-group description="Any walking sounds, ambient sounds, etc. all will be grouped under here" sid="588122635990518" title="Sounds" />
-        <event-group description="" sid="600400533847830" title="Player Sprite" />
-        <event-block sid="427299622128509">
-            <conditions>
-                <condition behavior="8Direction" id="0" name="Is moving" sid="471962379559420" type="Player" />
-                <condition id="-6" name="Every X seconds" sid="172369121970094" type="System">
-                    <param id="0" name="Interval (seconds)">1/3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="483503239056267" type="Audio">
-                    <param id="0" name="Audio file">Concrete 1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-15</param>
-                    <param id="1" name="Tag (optional)">&quot;Footsteps&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="600400533847830" title="Player Stuff">
+            <sub-events>
+                <event-block sid="427299622128509">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="471962379559420" type="Player" />
+                        <condition id="-6" name="Every X seconds" sid="172369121970094" type="System">
+                            <param id="0" name="Interval (seconds)">1/3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="483503239056267" type="Audio">
+                            <param id="0" name="Audio file">Concrete 1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;Footsteps&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="508276372816977">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="198669937484285" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="618697073337127" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="485378172105966" type="Player">
+                            <param id="0" name="Animation">&quot;Up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="336188626948830" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="237047333732856" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="473557635696678" type="Player">
+                            <param id="0" name="Degrees">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556371629269583">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="866514174303276" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="444542921019059" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="213883348382239" type="Player">
+                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="689751702055082" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="722246903112787" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="963017659760837" type="Player">
+                            <param id="0" name="Degrees">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="146789189714879">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="153491756948697" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="925234688647519" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="674180530382091" type="Player">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="841413941829885" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="389191260334484" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="249342068524814">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="803734402644714" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="253220343114003" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="526136451847248" type="Player">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="278678923034888" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="683363761940226" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="755492625983667">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="615367788145505" type="System" />
+                <condition id="-14" name="Compare variable" sid="919577267818668" type="System">
+                    <param id="0" name="Variable">layoutID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="596820058939666" type="Audio">
@@ -373,115 +496,9 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;Soundtrack&quot;</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="508276372816977">
-            <conditions>
-                <condition id="2" name="Key is down" sid="198669937484285" type="Keyboard">
-                    <param id="0" name="Key">38</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="618697073337127" type="Player">
-                    <param id="0" name="Control">2</param>
-                </action>
-                <action id="4" name="Set animation" sid="485378172105966" type="Player">
-                    <param id="0" name="Animation">&quot;Up&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="8" name="Set flipped" sid="336188626948830" type="Player">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="237047333732856" type="Player">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-18" name="Rotate clockwise" sid="473557635696678" type="Player">
-                    <param id="0" name="Degrees">90</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="556371629269583">
-            <conditions>
-                <condition id="2" name="Key is down" sid="866514174303276" type="Keyboard">
-                    <param id="0" name="Key">40</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="444542921019059" type="Player">
-                    <param id="0" name="Control">3</param>
-                </action>
-                <action id="4" name="Set animation" sid="213883348382239" type="Player">
-                    <param id="0" name="Animation">&quot;Down&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="689751702055082" type="Player">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="8" name="Set flipped" sid="722246903112787" type="Player">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-18" name="Rotate clockwise" sid="963017659760837" type="Player">
-                    <param id="0" name="Degrees">90</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="146789189714879">
-            <conditions>
-                <condition id="2" name="Key is down" sid="153491756948697" type="Keyboard">
-                    <param id="0" name="Key">37</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="925234688647519" type="Player">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="674180530382091" type="Player">
-                    <param id="0" name="Animation">&quot;Left&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="8" name="Set flipped" sid="841413941829885" type="Player">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="389191260334484" type="Player">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="249342068524814">
-            <conditions>
-                <condition id="2" name="Key is down" sid="803734402644714" type="Keyboard">
-                    <param id="0" name="Key">39</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="253220343114003" type="Player">
-                    <param id="0" name="Control">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="526136451847248" type="Player">
-                    <param id="0" name="Animation">&quot;Right&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="8" name="Set flipped" sid="278678923034888" type="Player">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="683363761940226" type="Player">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="926435381431328">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="242445732968841" type="Player">
-                    <param id="0" name="Object">DoorIan2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="494927147247486" type="System">
-                    <param id="0" name="Layout">LayerIan</param>
-                </action>
-                <action id="4" name="Set animation" sid="368981595190881" type="Door">
-                    <param id="0" name="Animation">&quot;Closed&quot;</param>
-                    <param id="1" name="From">0</param>
+                <action id="-10" name="Add to" sid="301328454309525" type="System">
+                    <param id="0" name="Variable">layoutID</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
