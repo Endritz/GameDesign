@@ -9132,7 +9132,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Scare" sid="941028171669295">
+        <layer name="HUD" sid="941028171669295">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

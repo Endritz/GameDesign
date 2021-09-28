@@ -4632,7 +4632,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Scare" sid="567354200350268">
+        <layer name="HUD" sid="567354200350268">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
