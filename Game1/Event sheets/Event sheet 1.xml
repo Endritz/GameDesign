@@ -3,8 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Xpos" sid="522619308346008" static="0" type="number">643</variable>
+        <variable constant="0" name="YPos" sid="242593910368612" static="0" type="number">541</variable>
         <variable constant="0" name="jumpValue" sid="248890516633318" static="0" type="number">0</variable>
-        <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">2</variable>
+        <variable comment="Record collection of items to escape" constant="0" name="Keys" sid="622748276877812" static="0" type="number">0</variable>
         <event-block sid="639649187273854">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="134515300768334" type="System">
@@ -33,19 +35,25 @@
                     <param id="0" name="Width">1280</param>
                     <param id="1" name="Height">720</param>
                 </action>
+                <action id="-1" name="Set X" sid="941576626277131" type="Player">
+                    <param id="0" name="X">Xpos</param>
+                </action>
+                <action id="-2" name="Set Y" sid="167269801323358" type="Player">
+                    <param id="0" name="Y">YPos</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="537857939930872" title="Player Interactions">
             <sub-events>
-                <event-block sid="821883686116720">
+                <event-block sid="934954866490939">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
-                            <param id="0" name="Object">DoorAlex</param>
+                        <condition id="0" name="On collision with another object" sid="736697978294851" type="Player">
+                            <param id="0" name="Object">DoorFinal</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="395451693643409" type="System">
-                            <param id="0" name="Layout">LayoutAlex</param>
+                        <action id="-2" name="Go to layout" sid="528007301209660" type="System">
+                            <param id="0" name="Layout">End</param>
                         </action>
                     </actions>
                 </event-block>
@@ -59,17 +67,97 @@
                         <action id="-2" name="Go to layout" sid="336805997832521" type="System">
                             <param id="0" name="Layout">LayoutJoey</param>
                         </action>
+                        <action id="-9" name="Set value" sid="653322204070019" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">120</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="839162493544183" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">440</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="553135622303755" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="188863231062240" type="Player">
+                            <param id="0" name="Y">YPos</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="571259451665201">
+                <event-block sid="821883686116720">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="356662828895077" type="Player">
-                            <param id="0" name="Object">DoorKyle</param>
+                        <condition id="0" name="On collision with another object" sid="653237166840782" type="Player">
+                            <param id="0" name="Object">DoorAlex</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="154075651260292" type="System">
-                            <param id="0" name="Layout">LayerKyle</param>
+                        <action id="-2" name="Go to layout" sid="395451693643409" type="System">
+                            <param id="0" name="Layout">LayoutAlex</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="149014238169892" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">53</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="489666985305113" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">715</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="535648705206386" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="271041315227067" type="Player">
+                            <param id="0" name="Y">YPos</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="649503480737996">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="266543241450796" type="Player">
+                            <param id="0" name="Object">DoorJoey2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="344750674271440" type="System">
+                            <param id="0" name="Layout">LayoutJoey</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="184524542373261" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">1320</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="695445320934891" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">80</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="460514201649035" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="953164626892753" type="Player">
+                            <param id="0" name="Y">YPos</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231401933995505">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="708215297509314" type="Player">
+                            <param id="0" name="Object">DoorMain2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="791240404499546" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="320274686602874" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">1183</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="201842969367920" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">339</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="684774823491174" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="802211059460488" type="Player">
+                            <param id="0" name="Y">YPos</param>
                         </action>
                     </actions>
                 </event-block>
@@ -83,41 +171,97 @@
                         <action id="-2" name="Go to layout" sid="147521996228396" type="System">
                             <param id="0" name="Layout">LayerIan</param>
                         </action>
+                        <action id="-9" name="Set value" sid="529181299117804" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">1120 </param>
+                        </action>
+                        <action id="-9" name="Set value" sid="471929655513071" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">600</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="659617905797697" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="276039865122804" type="Player">
+                            <param id="0" name="Y">YPos</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="934954866490939">
+                <event-block sid="571259451665201">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="736697978294851" type="Player">
-                            <param id="0" name="Object">DoorFinal</param>
+                        <condition id="0" name="On collision with another object" sid="356662828895077" type="Player">
+                            <param id="0" name="Object">DoorKyle</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="528007301209660" type="System">
-                            <param id="0" name="Layout">End</param>
+                        <action id="-2" name="Go to layout" sid="154075651260292" type="System">
+                            <param id="0" name="Layout">LayerKyle</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="574203044870338" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">1160</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="286761310197850" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">680</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="533608289692465" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="821061715323360" type="Player">
+                            <param id="0" name="Y">YPos</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="485259331975789">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="283709546899920" type="Player">
-                            <param id="0" name="Object">DoorMain</param>
+                            <param id="0" name="Object">DoorIan2</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="101703261435252" type="System">
-                            <param id="0" name="Layout">LayoutMain</param>
+                            <param id="0" name="Layout">LayerIan</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="838947731442144" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">40</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="687106496191048" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">440</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="284235264871863" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="149724636136460" type="Player">
+                            <param id="0" name="Y">YPos</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="649503480737996">
+                <event-block sid="604755613007443">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="266543241450796" type="Player">
-                            <param id="0" name="Object">DoorJoey2</param>
+                        <condition id="0" name="On collision with another object" sid="325630615009283" type="Player">
+                            <param id="0" name="Object">DoorMain3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="344750674271440" type="System">
-                            <param id="0" name="Layout">LayoutJoey</param>
+                        <action id="-2" name="Go to layout" sid="947865294054974" type="System">
+                            <param id="0" name="Layout">LayoutMain</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="933503284207006" type="System">
+                            <param id="0" name="Variable">Xpos</param>
+                            <param id="1" name="Value">160</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="323299915601166" type="System">
+                            <param id="0" name="Variable">YPos</param>
+                            <param id="1" name="Value">303</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="433783010014631" type="Player">
+                            <param id="0" name="X">Xpos</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="893502617043212" type="Player">
+                            <param id="0" name="Y">YPos</param>
                         </action>
                     </actions>
                 </event-block>
@@ -325,30 +469,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="433591244285189">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="349060672900245" type="Player">
-                    <param id="0" name="Object">DoorMain2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="879446547119895" type="System">
-                    <param id="0" name="Layout">LayoutMain</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="511335169651045">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="309412384805399" type="Player">
-                    <param id="0" name="Object">DoorMain3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="400519505208325" type="System">
-                    <param id="0" name="Layout">LayoutMain</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="926435381431328">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="242445732968841" type="Player">
@@ -488,6 +608,18 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="753986039206214" type="Player" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="639617610801612" title="HUD">
+            <sub-events>
+                <event-block sid="766502833109187">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="830639529418766" type="HUDText">
+                            <param id="0" name="Text">Keys</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
