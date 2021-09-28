@@ -55,6 +55,13 @@
                         <action id="-2" name="Go to layout" sid="528007301209660" type="System">
                             <param id="0" name="Layout">End</param>
                         </action>
+                        <action id="33" name="Stop all" sid="203324802719990" type="Audio" />
+                        <action id="0" name="Play" sid="749598113740328" type="Audio">
+                            <param id="0" name="Audio file">466133__humanoide9000__victory-fanfare</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="879387011619779">
@@ -283,7 +290,7 @@
                             <param id="3" name="Y">chest1.Y</param>
                         </action>
                         <action id="-16" name="Wait" sid="559274392534224" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1/4</param>
                         </action>
                         <action id="-9" name="Destroy" sid="299542799655556" type="Chest1" />
                     </actions>
@@ -340,6 +347,9 @@
                     <actions>
                         <action behavior="8Direction" id="0" name="Stop" sid="457772003899405" type="Player" />
                         <action id="-9" name="Destroy" sid="232113577282229" type="ScareTrigger" />
+                        <action id="-15" name="Set visible" sid="993738855745474" type="Jumpscare">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                         <action id="0" name="Play" sid="362902104754333" type="Audio">
                             <param id="0" name="Audio file">scream</param>
                             <param id="2" name="Loop">0</param>
@@ -347,7 +357,10 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="781400493025249" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="913489693018428" type="Jumpscare">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="984461113015515" type="Player">
                             <param id="0" name="Magnitude">50</param>

@@ -747,6 +747,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="626483830647437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916373622531541" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -784,6 +792,8 @@
         <file name="Concrete 1.ogg" />
         <file name="soundtrack.m4a" />
         <file name="soundtrack.ogg" />
+        <file name="466133__humanoide9000__victory-fanfare.m4a" />
+        <file name="466133__humanoide9000__victory-fanfare.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
